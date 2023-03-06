@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500;600&display=swap');
+
+body{
+   background-color: rgb(63, 55, 45);
+}
+nav{
+    font-family:
+    'Edu VIC WA NT Beginner', cursive;
+    color: antiquewhite;  
+}
+nav ul
+{
+    display:flex;
+    align-items: center;
+    list-style-type:none;
+    height: 67px;
+    width: auto;
+    background-color: black;
+}
+nav ul li{
+    padding: 0 12px;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.brand img{
+    width: 44px;
+    margin: 10px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+  
+}
+.container{
+    color: white;
+    background-color: black;   
+    min-height: 70vh;
+    margin: 10px auto;
+    width: 80%;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+.container h1{
+    padding: 10px;
+}
+
+.songItem{
+    background-color: rgb(63, 55, 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 2px;
+    width: 40vw;
+    border-radius: 10px;
+    
+} 
+.songItem img{
+width: 30px;
+margin-left: 20px;
+border-radius: 50%;
+}
+
+.songListPlay{
+    margin-right: 20px;
+}
+
+
+.bottom{
+    position: sticky;
+    height:100px;
+    width: 100%;
+    bottom: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    color: white;
+}
+#myProgressBar{
+    width: 50%;
+    height: 10px;
+    background-color: rgb(63, 55, 45);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.progressed{
+    height: 10px;
+    background-color:white;
+    width:1%;
+    transition:linear 0.5s;
+    border-radius: 30px ;  
+}
+ 
+.icons i{
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.songinfo img{
+    width:40px;
+    opacity:0;
+    transition: opacity 0.4s ease-in-out;
+    padding-right: 20px;
+}
+.songinfo{
+    position: absolute;
+    left: 7vw;
+    margin-bottom: 15px;
+}
+
+.timestamp{
+    margin-right: 15px;
+}
